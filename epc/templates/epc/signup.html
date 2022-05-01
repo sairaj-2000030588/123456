@@ -1,0 +1,270 @@
+{% extends 'epc/base.html' %}
+{% block content %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+    <style>
+      *{
+margin:0;
+padding:0;
+}
+.banner{
+width:100%;
+height:100vh;
+background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://static.startuptalky.com/2021/10/Top-Consultancy-Business-Ideas_startuptalky.jpg);
+background-size:cover;
+background-position:center;
+}
+.navbar{
+width:100%;
+margin:auto;
+padding:100px 0;
+display:flex;
+align-items:left;
+justify-content:space-between;
+font-size:30px;
+}
+.logo{
+width:120px;
+cursor:pointer;
+}
+.navbar ul li{
+list-style:none;
+display:inline-block;
+margin:0 20px;
+position:relative;
+}
+.navbar ul li a{
+text-decoration:none;
+color:#fff;
+text-transform:uppercase;
+}
+.navbar ul li::after{
+content:'';
+height:3px;
+width:0;
+background:#009688;
+position:absolute;
+left:0;
+bottom:-10px;
+transition: 0.5s;
+}
+ .navbar ul li:hover::after{
+ width:100%;
+ }
+.content{
+width:100%;
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+text-align:center;
+color:#fff;
+}
+.content h1{
+font-size:70px;
+margin-top:80px;
+}
+.content p{
+margin:20px auto;
+font-weight:100;
+line-weight:25px;
+}
+button{
+width:200px;
+padding:15px 0;
+text-align:center;
+margin:20px 10px;
+border-radius:25px;
+font-weight:bold;
+border:2px solid #009688;
+background:transparent;
+color:#fff;
+cursor:pointer;
+}
+@import url('https://fonts.googleapis.com/css?family=Bangers|Cinzel:400,700,900|Lato:100,300,400,700,900|Lobster|Lora:400,700|Mansalva|Muli:200,300,400,600,700,800,900|Open+Sans:300,400,600,700,800|Oswald:200,300,400,500,600,700|Roboto:100,300,400,500,700,900&display=swap');
+/* Used Google Fonts */
+font-family: 'Roboto', sans-serif;
+h1, h2, h3, h4, h5, h6, p{
+  margin:0px;
+  padding:0px;
+}
+.logo-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display:inline-block;
+}
+.logo-container ul li {
+    width: 300px;
+    height: 120px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    float: left;
+    padding:20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-container ul li a{
+  text-decoration:none !important;
+  display: inline-block;
+}
+.logo-holder{
+  text-align:center;
+}
+.logo-1 h3 {
+    color: #e74c3c;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    line-height:1;
+}
+.logo-1 p {
+    font-size: 20px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    color: #34495e;
+    font-weight: 600;
+}
+.form{
+width:300px;
+height:300px;
+background:linear-gradient(to right, transperent);
+top:20px;
+border-radius:2px;
+padding:20px;
+text-align:center;
+position: right;
+border: 1px solid #fff;
+}
+.form h1{
+background-color:#fff;
+text-color:red;
+}
+.form h2{
+width:220px;
+font-family:sans-serif;
+text-align:center;
+color:#6D6B1E;
+font-size:40px;
+background-color:#fff;
+border-radius:10px;
+margin:20px;
+padding:8px;
+}
+.form input{
+width:240px;
+height:20px;
+background:transparent;
+border-bottom:1px solid #6D6B1E;
+border-top:none;
+border-right:none;
+border-left:none;
+color:#fff;
+font-size:15px;
+letter-spacing:1px;
+margin-top:30px;
+font-family:sans-serif;
+}
+.form input:focus{
+outline:none;
+}
+: :placeholder{
+color:black;
+font-family:Arial;
+}
+.btnn{
+width:240px;
+height:40px;
+background:##ff7200;
+border:none;
+margin-top:30px;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+color:#fff;
+transition: 0.4s ease;
+}
+.btnn:hover{
+background:#fff;
+color:#ff7200;
+}
+.btnn a {
+text-decoration:none;
+color:#000;
+font-weight:bold;
+}
+.form .link{
+font-family:Arial,Helvetica,sans-serif;
+font-size:17px;
+padding-top:20px;
+txt-align:center;
+}
+.form .link a{
+text-decoration:none;
+color:#ff7200;
+}
+.liw{
+padding-top:15px;
+padding-bottom:10px;
+text-align:center;
+}
+.icons a{
+text-decoration:none;
+color:#fff;
+}
+.icons ion-icon{
+color:#fff;
+font-size:30px;
+padding-left:14px;
+padding-top:5px;
+transition:0.3s ease;
+}
+.icons ion-icon:hover{
+color:#ff7200;
+}
+  </style>
+</head>
+<body>
+<div class="banner">
+     <div class="navbar">
+         <div class="logo-container">
+ <div class="logo-holder logo-1">
+        <a href="">
+          <h3>JOBHUNT</h3>
+        </a>
+      </div>
+</div>
+
+         <ul>
+            <li><a href="/">Home</a></li>
+             <li><a href="/about">About</a></li>
+               <li><a href="/signup">SignUp</a></li>
+              <li><a href="/login">Login</a></li>
+
+         </ul>
+     </div>
+
+<center>
+<div class="form">
+    <form method="POST">
+   {% csrf_token %}
+        <h1>SIGN UP</h1>
+   {{form.as_p}}
+<button>SIGNUP</button>
+
+</form>
+    </center>
+</div>
+
+
+
+</body>
+
+</html>
+{% endblock%}

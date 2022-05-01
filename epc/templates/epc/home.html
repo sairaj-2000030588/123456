@@ -1,0 +1,353 @@
+{% extends 'epc/base.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+*{
+margin:0;
+padding:0;
+}
+.banner{
+width:100%;
+height:100vh;
+background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://www.airswift.com/hubfs/Featured%20Images/Consulting%20Services-featured-image.jpg);
+background-size:cover;
+background-position:center;
+}
+.navbar{
+width:100%;
+margin:auto;
+padding:35px 0;
+display:flex;
+align-items:right;
+justify-content:space-between;
+font-size:30px;
+}
+.logo{
+width:120px;
+cursor:pointer;
+}
+.navbar ul li{
+list-style:none;
+display:inline-block;
+margin:0 20px;
+position:relative;
+}
+.navbar ul li a{
+text-decoration:none;
+color:#fff;
+text-transform:uppercase;
+}
+.navbar ul li::after{
+content:'';
+height:3px;
+width:0;
+background:#009688;
+position:absolute;
+left:0;
+bottom:-10px;
+transition: 0.5s;
+}
+ .navbar ul li:hover::after{
+ width:100%;
+ }
+.content{
+width:100%;
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+text-align:center;
+color:#fff;
+}
+.content h1{
+font-size:70px;
+margin-top:80px;
+}
+.content p{
+margin:20px auto;
+font-weight:100;
+line-weight:25px;
+}
+button{
+width:200px;
+padding:15px 0;
+text-align:center;
+margin:20px 10px;
+border-radius:25px;
+font-weight:bold;
+border:2px solid #009688;
+background:#fff;
+color:blue;
+cursor:pointer;
+}
+@import url('https://fonts.googleapis.com/css?family=Bangers|Cinzel:400,700,900|Lato:100,300,400,700,900|Lobster|Lora:400,700|Mansalva|Muli:200,300,400,600,700,800,900|Open+Sans:300,400,600,700,800|Oswald:200,300,400,500,600,700|Roboto:100,300,400,500,700,900&display=swap');
+/* Used Google Fonts */
+font-family: 'Roboto', sans-serif;
+h1, h2, h3, h4, h5, h6, p{
+  margin:0px;
+  padding:0px;
+}
+.logo-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display:inline-block;
+}
+.logo-container ul li {
+    width: 300px;
+    height: 120px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    float: left;
+    padding:20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-container ul li a{
+  text-decoration:none !important;
+  display: inline-block;
+}
+.logo-holder{
+  text-align:center;
+}
+.logo-1 h3 {
+    color: #e74c3c;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    line-height:1.3;
+    text-align:center;
+}
+.logo-1 p {
+    font-size: 20px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    color: #34495e;
+    font-weight: 600;
+}
+.title{
+  position: absolute;
+  top:20%;
+  left:20%
+  transform: translate(-50%,-50%);
+  text-align:right;
+}
+.title h1{
+    color: #fff;
+    font-size:70px;
+
+    }
+ .section {
+      width: 100vw;
+      height: 40vh;
+      background-color:black;
+      font-size: 50px;
+      color: black;
+      text-align: center;
+      margin: 10px 5px;
+         }
+.card{
+width:250px;
+height:250px;
+display:inline-block;
+border-radius:10px;
+padding:15px 25px;
+box-sizing:border-box;
+cursor:pointer;
+margin:10px 10px;
+background-position:center;
+background-size:cover;
+transition:transform 0.5s;
+
+}
+
+.card1{
+position:left;
+background-image:url(https://img.etimg.com/thumb/width-640,height-480,imgsize-47966,resizemode-1,msid-63475017/industry/services/property-/-cstruction/tcs-inks-deal-to-lease-1m-sq-ft-space-in-bangalore/tcs-agencies-2.jpg);
+}
+.card2{
+position:left;
+background-image:url(https://images.livemint.com/img/2021/10/20/1600x900/HCL_1634746508794_1634746532315.jpg)
+}
+.card3{
+position:left;
+background-image:url(https://images.livemint.com/img/2020/07/23/1600x900/flipkart-kcUF--621x414@LiveMint_1595484033750.jpg)
+}
+.card4{
+position:left;
+background-image:url(https://content.techgig.com/photo/82080232/tech-mahindra-starts-the-first-phase-of-the-covid-19-vaccination-drive-for-employees.jpg?63237)
+}
+
+
+    .one{
+
+      width:100%;
+      height:60vh;
+       background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://akm-img-a-in.tosshub.com/businesstoday/images/story/202106/tcs_logo_1200_020621101143.jpg?size=1200:675);
+      background-size:cover;
+      background-position:center;
+    }
+    .two{
+    width:100%;
+      height:60vh;
+       background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://www.businessinsider.in/thumb.cms?msid=88944681&width=1200&height=900);
+      background-size:cover;
+      background-position:center;
+    }
+
+    .three{
+    width:100%;
+      height:60vh;
+       background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://www.bitrefill.com/content/cn/b_rgb%3AFFFFFF%2Cc_pad%2Ch_600%2Cw_1200/v1553602667/flipkart.jpg);
+      background-size:cover;
+      background-position:center;
+    }
+    .four{
+    width:100%;
+      height:60vh;
+       background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://www.companieshistory.com/wp-content/uploads/2013/07/Mahindra-Mahindra.png);
+      background-size:cover;
+      background-position:center;
+    }
+
+    .nav {
+      width: 100vw;
+      height: 40vh;
+      background-color: #fff;
+      font-size: x-large;
+      color: white;
+      text-align: center;
+      margin: 10px 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      place-items: center;
+      background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://www.airswift.com/hubfs/Featured%20Images/Consulting%20Services-featured-image.jpg);
+      background-size:cover;
+      background-position:center;
+
+    }
+
+    .btn {
+      color: white;
+      background-color: #38CC77;
+      height: 40px;
+      width: 90px;
+      padding: 2px;
+      border: 2px solid black;
+      text-decoration: none;
+    }
+
+
+
+</style>
+</head>
+<body>
+   <div class="banner">
+     <div class="navbar">
+         <div class="logo-container">
+ <div class="logo-holder logo-1">
+        <a href="">
+          <h3>JOBHUNT</h3>
+          <p>Consultancy</p>
+        </a>
+
+      </div>
+
+
+</div>
+
+
+         <ul>
+            <li><a href="/">Home</a></li>
+             <li><a href="/about">About</a></li>
+             <li><a href="/signup">SignUp</a></li>
+              <li><a href="/login">Login</a></li>
+             <li><a href="/contact">Contact US</a></li>
+
+         </ul>
+     </div>
+<center>
+    <img src="https://wallpaperaccess.com/full/6169755.jpg"  width="50%" height="70%">
+</center>
+
+   </div>
+
+
+
+   <div class="nav">
+       <button><a href="#section1" >TCS</a></button>
+       <button><a href="#section2">HCL</a></button>
+       <button><a href="#section3">FLIPKART</a></button>
+       <button><a href="#section4">MAHINDRA</a></button>
+     </div>
+       <div class="title">
+
+   </div>
+
+  <div class="section one" id="section1">
+     <h1>
+        TCS<br>
+    </h1>
+<a href="https://www.tcs.com/">
+      <div class="card card1" ><br>
+
+          </div><br>
+</a>
+<a href="/applyform"><button> apply</button></a>
+  </div>
+
+    </div>
+  <div class="section two" id="section2">
+    <h1>
+        HCL<br>
+    </h1>
+      <a href="https://www.hcltech.com/">
+      <div class="card card2" ><br>
+
+          </div><br>
+
+
+      <button> apply</button>
+  </div>
+<div class="section three" id="section3">
+    <h1>
+        Flipkart<br>
+    </h1>
+    <a href="https://www.flipkart.com/">
+      <div class="card card3" ><br>
+
+          </div><br>
+
+
+      <button> apply</button>
+  </div>
+ <div class="section four" id="section4">
+    <h1>
+        mahindra<br>
+    </h1>
+    <a href="https://www.mahindra.com/">
+      <div class="card card4" ><br>
+
+          </div><br>
+
+
+      <button> apply</button>
+
+  </div>
+
+
+</body>
+</html>
+{% endblock%}
